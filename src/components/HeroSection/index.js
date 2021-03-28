@@ -31,11 +31,16 @@ const HeroSection = () => {
                     Jan Aushadhi Scheme, Medicines for all at affordable price
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" 
+                    <Button to="about" 
                         onMouseEnter={onHover} 
                         onMouseLeave={onHover}
                         primary="true"
                         dark="true"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
                     >
                         Know more {hover ? <ArrowForward/>:<ArrowRight/>}
                     </Button>
